@@ -10,8 +10,8 @@ save_audio = False
 # Set up the strings parameters
 L = 0.62                                        # String Length
 T_0 = 670                                       # String tension
-rho = 5706                                      # String's material density
-radius = 0.00059                                # String radius
+rho = 11930                                      # String's material density
+radius = 0.00041                                # String radius
 cross_section = np.pi * radius ** 2             # Area of the cross section
 rho_L = 0.0063                                  # Linear mass density
 c = (T_0/rho_L) ** (1/2)
@@ -81,7 +81,7 @@ Ones = np.ones(x_num - 1)                                                       
 BB_plot = bloc.sitar_bridge(x_num, L, 1, 0.015)                                      # Set up the barrier location for plotting
 BB = BB_plot[1:-1].copy()                                                           # Set up a reduced barrier vector for calculations
 # Barrier parameters
-Kf = 10 ** 8                                                                        # Set the stiffness of the barrier
+Kf = 10 ** 13                                                                        # Set the stiffness of the barrier
 af = 1.5                                                                            # Set the exponent of the barrier
 def phi(x):
     '''
