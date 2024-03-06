@@ -43,7 +43,7 @@ deltas = np.zeros((3, x_num-1))                 # Instantiate a storage of 3 vec
 x = np.arange(0,L + 0.5 * h, h)                 # The location of the grid in the spatial domain for plotting
 
 # Initial Conditions
-inc.string_pluck(U, x_num, 0.55, 0.006)         # Set the initial values of the string relating to a pluck
+inc.string_pluck(U, x_num, 0.5, 0.002)         # Set the initial values of the string relating to a pluck
 
 # Define our FD matricies
 # D_xx
